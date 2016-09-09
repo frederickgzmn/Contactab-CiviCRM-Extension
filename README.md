@@ -7,3 +7,8 @@ The tab show the personal campaign page title (with a link to the page), status,
 - Feature so that by clicking the number of donations field show a list of these
  
 Demo extension:
+
+Link site: http://lab.nilbug.com/drupal
+New features link: http://lab.nilbug.com/drupal/?q=civicrm/contact-tab
+User: admin
+Password: compu635241
