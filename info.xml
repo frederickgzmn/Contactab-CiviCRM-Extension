@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<extension key="com.contact.extension" type="module">
+  <file>extension</file>
+  <name>Contact Tab</name>
+  <description>Contact tab for civicrm</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Frederick</author>
+    <email>frederickgzmn@gmail.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">http://nilbug.com</url>
+    <url desc="Documentation">http://nilbug.com</url>
+    <url desc="Support">http://nilbug.com</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2016-09-04</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.2</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <civix>
+    <namespace>CRM/Extension</namespace>
+  </civix>
+</extension>

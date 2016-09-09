@@ -7,5 +7,3 @@ The tab show the personal campaign page title (with a link to the page), status,
 - Feature so that by clicking the number of donations field show a list of these
  
 Demo extension:
-
-Bonus points will be obtained by:
