@@ -1,17 +1,17 @@
 <?php
 /**
- * Test Generated example demonstrating the Activity.get API.
+ * Test Generated example demonstrating the Personalcampaign.get API.
  *
  * @return array
  *   API result array
  */
-function activity_get_example() {
-  $params = array(
-    'contact_id' => 1,
-  );
+function personals_get_example() {
 
   try{
-    $result = civicrm_api3('Personals', 'get', $params);
+    $result = civicrm_api3('personals', 'get', array(
+      'sequential' => 1,
+      'contact_id' => 202,
+    ));
   }
   catch (CiviCRM_API3_Exception $e) {
     // Handle error here.
@@ -34,30 +34,31 @@ function activity_get_example() {
  * @return array
  *   API result array
  */
-function activity_get_expectedresult() {
-
+function personals_get_expectedresult() {
   $expectedResult = array(
     'is_error' => 0,
     'version' => 3,
     'count' => 1,
     'id' => 1,
-    'values' => array(
-      '0' => array(
-        'source_contact_id' => '1',
-        'id' => '1',
-        'activity_type_id' => '51',
-        'subject' => 'test activity type id',
-        'location' => 'Pennsylvania',
-        'activity_date_time' => '2011-06-02 14:36:13',
-        'details' => 'a test activity',
-        'status_id' => '2',
-        'activity_name' => 'Test activity type',
-        'status' => 'Completed',
-        'custom_1' => 'custom string',
-        'custom_1_1' => 'custom string',
-      ),
-    ),
-  );
+    "values" => array(
+        '0' => array(
+            "pcpId" => "1",
+            "pageTitle" => "Help Support CiviCRM!",
+            "pcpTitle" => "My Personal Civi Fundraiser",
+            "pcpStatus" => "Approved",
+            "pcpGoalAmount" => "5000.00",
+            "pcpAmount" => "260.00",
+            "pcpLink" => "xxxxxxxx/index.php?q=civicrm/pcp/info&reset=1&id=1",
+            "pcpEditLink" => "xxxxxxxx/index.php?q=civicrm/pcp/info&action=update&reset=1&id=1&context=dashboard",
+            "contribPage" => "Help Support CiviCRM!",
+            "eventPage" => "Fall Fundraiser Dinner",
+            "idscontributions" => array(
+                "$ 10.00 Jones Family",
+                "$ 250.00 Annie And The Kids"
+            ),
+            "noContribs" => "2"
+        )
+    );
 
   return $expectedResult;
 }
